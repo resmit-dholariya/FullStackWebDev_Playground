@@ -106,7 +106,7 @@ Here are some of the projects I've built as part of my learning journey:
 - **Simon Says Game (JS)**
 - **Todo List App (JS)**
 - **Real-time Weather App (React & Material UI)**
-- **WanderLust(Full Stack Major Project with Deployment)**
+- **WanderLust (Full Stack Major Project with Deployment)**
 
 ## Acknowledgments
 
