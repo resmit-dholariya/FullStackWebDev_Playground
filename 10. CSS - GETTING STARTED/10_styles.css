@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+  text-decoration: wavy red underline;
+}
+
+h2 {
+  text-align: start; /* start and end are same as left and right*/
+  font-weight: 800;
+  text-decoration: double blue overline;
+}
+
+h3 {
+  text-align: justify;
+  text-decoration: pink line-through;
+}
+
+p {
+  text-align: end;
+  font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middlewares</title>
+</head>
+
+<body>
+    <div>
+        Middleware
+        It is an intermediary
+
+        in Express
+        Middleware in Express are functions that come into play
+        after the server receives the request and before the
+        response is sent to the client.
+    </div>
+    <div>
+        Middleware
+        Common middleware functions :
+
+        • method0verride
+        • bodyParser
+        • express.static
+        • express.urlencoded
+    </div>
+    <div>
+        app.use(express.urlencoded({extended : true}));
+        app.use(express.static(path.join(__dirname, "/public")))
+    </div>
+    <div>
+        What do middlewares do?
+
+        Middleware functions can perform the following tasks:
+        Execute any code.
+        Make changes to the request and the response objects.
+        End the request-response cycle.
+        Call the next middleware function in the stack.
+    </div>
+    <div>
+        Using next
+        The next middleware function is commonly denoted by a variable named next.
+
+        If the current middleware function does not end the request-resoonse
+        cycle, it must call next() to pass control to the next middleware function.
+    </div>
+</body>
+
+</html>

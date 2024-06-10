@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range input element</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <label for="vol">Adjust your volume level</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="10"
+          id="vol"
+          name="vol"
+          value="60"
+        />
+        <!-- value attribute is used to give preset value to form and step is used to how much the volume level increases in one step-->
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

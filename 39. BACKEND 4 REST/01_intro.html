@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Intro</title>
+</head>
+
+<body>
+    <div>
+        REST
+        Representational State Transfer
+        REST is an architectural style that defines a set of constraints to be used for creating web services.
+    </div>
+    <div>
+        CRUD Operations
+        GET -- retrieves resources.
+        POST -- submits new data to the server
+        PUT -- updates existing data
+        PATCH -- update existing data partially
+        DELETE -- removes data
+    </div>
+    <div>
+        Creating RESTful APIs
+        GET -- /posts -- to get data for all posts
+        POST -- /posts -- to add a new post
+        GET -- /posts/id -- to get one post (using id)
+        PATCH -- /posts/id -- to update specific post
+        DELETE -- /posts/id -- to delete specific post
+    </div>
+    <div>
+        Implement : GET Iposts
+        Index Route
+        GET /posts -- to get data for all posts
+    </div>
+    <div>
+        Implement: POST/posts
+        Create Route
+        POST /posts -- to add a new post
+        2 routes
+        • Serve the form -- GET POST /posts/new
+        • Add the new post -- POST /posts
+    </div>
+    <div>
+        Redirect -- to connect pages
+        res.redirect( URL )
+    </div>
+    <div>
+        Implement : GET /posts/:id
+        Show Route
+        GET /posts/:id -- to get one post (using id)
+    </div>
+    <div>
+        Create id for Posts
+        UUID Package
+        Universally unique identifier
+        npm install uuid
+    </div>
+    <div>
+        Implement : PATCH /posts/:id
+        Update Route
+        PATCH /posts/:id -- to update specific post
+    </div>
+    <div>
+        Create Form for Update
+        Edit Route
+        Serve the edit form GET -- /posts/:id/edit
+    </div>
+    <div>
+        Implement : /posts/:id
+        Destroy Route
+        DELETE /posts/:id to delete specific post
+    </div>
+</body>
+
+</html>

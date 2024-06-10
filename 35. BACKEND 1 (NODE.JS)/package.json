@@ -1,0 +1,16 @@
+{
+  "name": "node.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "04_math.js",
+  "dependencies": {
+    "figlet": "^1.7.0",
+    "random-username-generator": "^1.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Resmit Dholariya",
+  "license": "ISC",
+  "type": "module"
+}

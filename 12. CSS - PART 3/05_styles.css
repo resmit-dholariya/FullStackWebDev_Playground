@@ -1,0 +1,18 @@
+h1{
+    border: 2px solid black;
+}
+
+#outer{
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    margin: 50px;
+}
+
+#inner{
+    height: 100px;
+    height: 100%;   /* inherit height from outer div */
+    width: 100px;
+    background-color: cornflowerblue;
+    margin-left: 10%;   /* inherited from parent height*/
+}

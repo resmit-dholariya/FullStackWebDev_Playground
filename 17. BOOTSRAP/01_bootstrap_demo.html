@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BootStrap Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="01_styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg text-bg-success sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand"  style="color: yellow; font-weight: 900;;">Brand Name</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#" style="color: white;">Home</a>
+            <a class="nav-link" href="#" style="color: white;">Courses</a>
+            <a class="nav-link" href="#" style="color: white;">My courses</a>
+            <a class="nav-link" href="#" style="color: white;">contact us</a>
+            <a class="nav-link" href="#" style="color: white;">About Us</a>
+          </div>
+        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+      <h2>BootStrap Demo</h2>
+      <div class="card" style="width: 18rem;">
+        <img src="photo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photography</h5>
+          <p class="card-text">It is an art to capture important things.</p>
+          <a href="#" class="btn btn-primary">Know More</a>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+        assumenda beatae aliquid sunt illum est quam iure et temporibus. Non
+        assumenda corrupti corporis eos aperiam, officia temporibus repudiandae
+        dicta consectetur! Amet facilis fuga quisquam nemo, ipsam expedita eum,
+        quam magni dolore tempora optio eaque consectetur! Impedit, aut?
+        Voluptatibus, ullam facere. Adipisci iure dignissimos neque quae
+        voluptates dicta mollitia, voluptatibus consequatur. Repellat, quasi
+        nisi. Est tempora saepe veritatis, corporis deserunt, temporibus ipsam
+        eveniet perspiciatis earum natus officiis similique, distinctio error
+        cumque minus voluptatibus ullam nisi quas numquam. Eligendi voluptatem a
+        iste. Molestias sed, pariatur laborum at quod molestiae consectetur
+        laudantium saepe corrupti culpa ipsa quisquam cupiditate rerum veniam
+        impedit doloribus ea tenetur voluptatibus! Quidem voluptas repellendus
+        quod repellat id iure blanditiis. Sapiente, modi nisi asperiores
+        excepturi, nam debitis laborum corporis quia iusto illum, earum et
+        numquam voluptas doloremque? Iusto voluptate accusantium beatae labore
+        est aspernatur laudantium reiciendis officia maxime, expedita quae?
+      </p>
+    </div>
+    <div style="background-color: white" class="container">
+      <br />
+      <button type="button" class="btn btn-primary btn-lg">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-link btn-lg">Link</button>
+      <br />
+      <br />
+      <a href="https://www.google.com" class="btn btn-outline-dark"
+        >Google Me !</a
+      >
+      <br />
+      <br />
+      <button type="button" class="btn btn-danger">
+        Notifications <span class="badge text-bg-warning">4</span>
+      </button>
+      <br />
+      <br />
+      <button type="button" class="btn btn-dark position-relative">
+        Inbox
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <br />
+      <br />
+      <span class="badge rounded-pill text-bg-primary">Primary</span>
+      <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+      <span class="badge rounded-pill text-bg-success">Success</span>
+      <span class="badge rounded-pill text-bg-danger">Danger</span>
+      <span class="badge rounded-pill text-bg-warning">Warning</span>
+      <span class="badge rounded-pill text-bg-info">Info</span>
+      <span class="badge rounded-pill text-bg-light">Light</span>
+      <span class="badge rounded-pill text-bg-dark">Dark</span>
+      <br />
+      <br />
+      <div class="alert alert-danger" role="alert">
+        Donwload Failed! Please try again!
+      </div>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        congratulations! Your score is 50/50.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <br />
+      <div>
+        <div class="btn-group">
+          <button class="btn btn-success">One</button>
+          <button class="btn btn-success">Two</button>
+          <button class="btn btn-success">Three</button>
+        </div>
+        <button class="btn btn-danger">One</button>
+        <button class="btn btn-danger">Two</button>
+        <button class="btn btn-danger">Three</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

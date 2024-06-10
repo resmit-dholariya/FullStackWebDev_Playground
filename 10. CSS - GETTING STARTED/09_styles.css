@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: start; /* start and end are same as left and right*/
+}
+
+h3{
+    text-align: justify;
+}
+
+p{
+    text-align: end;
+}

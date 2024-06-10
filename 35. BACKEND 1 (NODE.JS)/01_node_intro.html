@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Intro</title>
+</head>
+<body>
+    <div>
+        Node.js
+            JavaScript Runtime Environment
+            It is used for server side programming.
+            *Node.js is not a language, library or framework.
+    </div>
+    <div>
+        Node Files - run
+            node fileName.js
+    </div>
+    <div>
+        Process
+            process : This object provides information about, and control over, the current Node.js process.
+            process.argv : returns an array containing the command-line arguments passed when the Node.js
+            process was launched.
+    </div>
+    <div>
+        module.exports
+            requiring files
+            require() a built-in function to include external modules that exist in separate files.
+            module.exports a special object
+    </div>
+    <div>
+        module.exports
+            requiring directories
+            require() a built-in function to include external modules that exist in separate files.
+            module.exports a special object
+    </div>
+    <div>
+        NPM (Node Package Manager)
+            npm is the standard package manager for Node.js.
+    </div>
+    <div>
+        Installing Packages
+            npm install <- package name ->
+    </div>
+    <div>
+        Installing Packages
+            node-modules The node-modules folder contains every installed dependency for your project.
+        package-lock.json
+            It records the exact version of every installed dependency,
+            including its sub-dependencies and their versions.
+        package.json
+            The package. json file contains descriptive and functional metadata about a project, such as a name,
+            version, and dependencies
+            npm init
+    </div>
+    <div>
+        Local VIS Global
+            npm install -g <- package name ->
+            npm link <- package name ->
+    </div>
+    <div>
+        require VIS import
+            import { sum } from "./math.js"
+            
+            We can't selectively load only the pieces we need with require but with import, we can selectively load only
+            the pieces we need, which can save memory.
+            Loading is synchronous for 'require' but can be asynchronous for 'import'.
+    </div>
+</body>
+</html> 

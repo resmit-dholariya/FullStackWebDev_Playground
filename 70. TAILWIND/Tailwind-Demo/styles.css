@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.capsules {
+  @apply bg-purple-500 text-white m-4 border-2 w-1/5 rounded-xl text-center;
+}
+
+/* .text-white {
+  @apply text-black; will be override default ones
+} */

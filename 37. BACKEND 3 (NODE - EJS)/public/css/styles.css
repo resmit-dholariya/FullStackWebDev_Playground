@@ -1,0 +1,12 @@
+body {
+  background-color: pink;
+}
+
+img {
+  height: 150px;
+  width: 100px;
+}
+
+.bgcolor {
+  background-color: lightblue;
+}

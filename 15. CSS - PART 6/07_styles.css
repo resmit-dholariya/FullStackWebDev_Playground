@@ -1,0 +1,42 @@
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+.container div {
+  background-color: pink;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .header {
+    grid-column: 1 / span 12;
+  }
+
+  .navigation {
+    grid-column: 1 / span 12;
+  }
+
+  .sidebar {
+    grid-row: 3 / span 9;
+    grid-column: 1 / span 3;
+  }
+
+  .main {
+    grid-row: 3 / span 9;
+    grid-column: 4 / span 9;
+  }
+
+  .ads {
+    grid-column: 1 / span 3;
+  }
+
+  .footer {
+    grid-column: 4 / span 9;
+  } 
+}

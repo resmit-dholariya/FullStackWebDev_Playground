@@ -1,0 +1,36 @@
+.card1 {
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 10px;
+  box-shadow: 2px 4px 8px black;
+  text-align: center;
+  background-color: #e63b1f;
+  border-radius: 10px;
+  transition: box-shadow 200ms ease-in-out 0.2s;
+  color:white
+}
+
+.card2 {
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 10px;
+  box-shadow: 2px 4px 8px black;
+  text-align: center;
+  background-color: #ec6293;
+  border-radius: 10px;
+  transition: box-shadow 200ms ease-in-out 0.2s;
+  color: white;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card1:hover,.card2:hover {
+  box-shadow: 3px 4px 18px black;
+}

@@ -1,0 +1,26 @@
+h2 {
+  display: inline;
+  background-color: pink;
+}
+
+.span1{
+  display: block;
+  background-color: yellowgreen;
+}
+
+#span2{
+    /* background-color: pink; */
+    border: 2px solid black;
+    height: 100px;  /* ignored by browser */
+    width: 200px;   /* ignored by browser */
+    padding: 50px;  /* Only applies to left and right sides */
+    margin: 20px;   /* Only applies to left and right sides */
+}
+
+div{
+    border: 2px solid black;
+    height: 100px;  /* ignored by browser */
+    width: 200px;   /* ignored by browser */
+    padding: 50px;  /* Only applies to left and right sides */
+    margin: 20px;   /* Only applies to left and right sides */
+}

@@ -1,0 +1,23 @@
+#first_div{
+    height: 150px;
+    width: 300px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin: 10px 1em 40px 2em;
+    padding: 1em;
+}
+
+.group_div{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.list{
+    display: inline-block;
+    margin-right: 10px;
+}

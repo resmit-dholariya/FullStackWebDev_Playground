@@ -1,0 +1,12 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+#third{
+    display: none;  /* to hide the element */
+}

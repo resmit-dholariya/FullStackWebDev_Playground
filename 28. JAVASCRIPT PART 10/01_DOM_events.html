@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+    <link rel="stylesheet" href="01_styles.css" />
+  </head>
+  <body>
+    <button
+      onclick="console.log('Photo was liked!'); console.log('likeCount++');"
+    >
+      Like this photo
+    </button>
+    <button
+      onclick="console.log('Photo was liked!'); console.log('likeCount++');"
+    >
+      Like this photo
+    </button>
+    <button
+      onclick="console.log('Photo was liked!');console.log('likeCount++');"
+    >
+      Like this photo
+    </button>
+    <button
+      onclick="console.log('Photo was liked!'); console.log('likeCount++');"
+    >
+      Like this photo
+    </button>
+    <br />
+    <br />
+    <div>
+      <button>0: Click me!</button>
+      <button>1: Click me!</button>
+      <button>2: Click me!</button>
+      <button>3: Click me!</button>
+      <button>4: Click me!</button>
+    </div>
+    <br /><br />
+    <div class="EventListenerBtn">
+      <button>0: EventListener Buttons</button>
+      <button>1: EventListener Buttons</button>
+      <button>2: EventListener Buttons</button>
+      <button>3: EventListener Buttons</button>
+      <button>4: EventListener Buttons</button>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <div class="genRanClr">
+      <h3>Generate a random color</h3>
+      <br />
+      <button>Click to Generate</button>
+      <br />
+      <br />
+      <div class="div4">This is the new color</div>
+    </div>
+    <br /><br />
+    <hr />
+    <div>
+      <p>This is a paragraph.</p>
+      <div class="box"></div>
+    </div>
+    <h1 class="this">Use of 'this' in EventListener</h1>
+    <h3 class="this">Let's demo it on elements</h3>
+    <p class="this">This is a sample paragraph</p>
+    <button class="this">Click me!</button>
+    <br /><br />
+    <hr />
+    <input type="text" placeholder="type something" id="input" />
+    <button>Click Me!</button>
+    <br /><br />
+    <hr />
+    <h2>Character movement tracker</h2>
+    <input type="text" placeholder="Enter movement keys" id="charMove" />
+    <br /><br />
+    <hr />
+    <br />
+    <form action="/action">
+      <input type="text" name="usr" id="username" placeholder="username" />
+      <input type="password" name="pass" id="pass" placeholder="password" />
+      <button id="register">Register</button>
+    </form>
+    <br /><br />
+    <hr />
+    <!-- <form action="/action" id="form2"> -->
+      <h2>My Text Editor</h2>
+      <p id="textPara"></p>
+      <input
+        type="text"
+        name="paragraph"
+        id="text"
+        placeholder="type something"
+      />
+    <!-- </form> -->
+    <script src="01_app.js"></script>
+  </body>
+</html>

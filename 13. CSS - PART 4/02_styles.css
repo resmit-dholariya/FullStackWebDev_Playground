@@ -1,0 +1,17 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: #4dff00ff;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: margin-top 2s ease-in-out 0.2s;
+}
+
+div:hover{
+   margin-top: 400px;
+   background-color: pink;
+}
+
+/* transition shorthand : property name | duration | timing-function | delay */
+/* transition: margin-top 2s ease-in-out 0.2s */
+

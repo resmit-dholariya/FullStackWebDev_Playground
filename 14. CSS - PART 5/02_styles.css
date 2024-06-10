@@ -1,0 +1,41 @@
+#container {
+  border: 2px solid lightseagreen;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+#navbar {
+  height: 50px;
+  width: 900px;
+  display: flex;
+  background-color: pink;
+  border: 2px solid lightseagreen;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.option {
+  height: 50px;
+  width: 80px;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-left: 5px;
+  line-height: 50px;
+}

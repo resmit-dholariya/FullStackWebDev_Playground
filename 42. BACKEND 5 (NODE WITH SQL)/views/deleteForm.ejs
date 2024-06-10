@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User</title>
+</head>
+
+<body>
+    <h2>You are about to delete user : <%= user.USERNAME %>
+
+    </h2>
+    <hr>
+
+    <form method="post" action="/user/<%=user.ID%>?_method=DELETE">
+        <h3>Fill below details correctly to countinue deletion process</h3>
+        <input type="text" name="email" id="email" placeholder="email"><br><br>
+        <input type="password" name="password" id="password" placeholder="password"><br><br>
+        <button>Countinue Deletion</button>
+    </form>
+</body>
+
+</html>

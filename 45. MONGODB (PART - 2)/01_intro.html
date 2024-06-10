@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongoose Intro</title>
+</head>
+
+<body>
+    <div>
+        Mongoose
+        A library that creates a connection between MongoDB & Node.js JavaScript Runtime
+        Environment
+        It is an ODM (Object Data Modeling) Library.
+    </div>
+    <div>
+        Schema
+        Schema defines the shape of the documents within that collection.
+
+        const userSchema = new mongoose.Schema({
+        name: String,
+        email: String,
+        age: Number,
+        });
+    </div>
+    <div>
+        Models
+        Model in mongoose is a class with which we construct documents.
+
+        const User = mongoose.model("User", userSchema) ;
+    </div>
+    <div>
+        INSERT
+        Inserting One
+
+        const user1 = new User({
+        name: "adam",
+        email: "adam@yahoo.in",
+        age: 58,
+        });
+
+        userl.save() //to save in DB
+        user2.save() //to save in DB
+    </div>
+    <div>
+        Note
+        Mongoose uses Operation Buffering
+
+        Mongoose lets you start using your models immediately, without
+        waiting for mongoose to establish a connection to MongoDB.
+    </div>
+    <div>
+        FIND
+        Model.find() //returns a Query Object (thennable)
+        *Mongoose Queries are not promises. But they have a .then( )
+        Model.findOne() //returns a single result
+        Model.findById() //commonly used
+    </div>
+    <div>
+        UPDATE
+        Model. updateOne( )
+        Model. updateMany( )
+        Model. findOneAndUpdate( )
+        Model. findByldAndUpdate( )
+    </div>
+    <div>
+        DELETE
+        Model.deleteOne() //returns count
+        Model.deleteMany() //returns count
+
+        DELETE -- to know which entry is deleted
+        Model. findByldAndDelete( )
+        Model. findOneAndDelete( )
+    </div>
+    <div>
+        Schema Validations
+        Handling Errors
+        console. log(err.errors.category.properties.message);
+    </div>
+</body>
+
+</html>

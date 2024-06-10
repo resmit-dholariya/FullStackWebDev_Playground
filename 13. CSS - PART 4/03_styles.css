@@ -1,0 +1,46 @@
+section{
+    margin-top: 100px;
+}
+
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/* transform -- applies to whole elements and its sub elements*/
+#one{
+    margin-bottom:100px;
+    transform: rotate(90deg);
+}
+
+#two{
+    transform: scale(2, 0.5);
+    /* transform: scaleX(2);
+    transform: scaleY(0.5); */
+}
+
+#three{
+    transform: translate(100px,5px);   
+    /* transform: translateX(100px);
+    transform: translateY(5px); */
+}
+
+#four{
+    transform: skew(-40deg) translateX(20px);
+}
+
+#five{
+    transform: rotate(30deg) translateX(100px);
+}

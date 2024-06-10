@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database & SQL Intro</title>
+</head>
+
+<body>
+    <div>
+        What is a Database?
+        It is a collection of data in a format that can be easily accessed.
+
+        Why databases?
+        • can store large data
+        • features like security, scalability etc.
+        • Easier to insert, update or delete data
+    </div>
+    <div>
+        SQL v/s NoSQL
+
+        SQL
+        Relational Database
+        (data stored in Tables)
+
+        eg - MySQL, Oracle,
+        PostgreSQL etc.
+
+        NoSQL
+        Non Relational Database
+        (data stored in documentlkey-vallgraphs etc.)
+
+        eg - MongoDb, Cassandra, Ne04j etc.
+    </div>
+    <div>
+        SQL (Structured Query Language)
+        SQL is a programming language used to interact with relational databases.
+    </div>
+    <div>
+        Our 1st Database
+        CREATE DATABASE db_name;
+        DROP DATABASE db_name;
+        USE db_ name;
+    </div>
+    <div>
+        Our 1st Table
+        CREATE TABLE table _ name (
+
+        column _ namel datatype constraint,
+        column _ name2 datatype constraint,
+        column _ name3 datatype constraint
+        );
+    </div>
+    <div>
+        Database Queries
+
+        CREATE DATABASE db_name;
+        CREATE DATABASE IF NOT EXISTS db_name;
+
+        DROP DATABASE db_name;
+        DROP DATABASE IF EXISTS db_name;
+
+        SHOW DATABASES;
+        SHOW TABLES;
+    </div>
+    <div>
+        Table Queries
+
+        Create
+        Insert
+        Update
+        Alter
+        Truncate
+        Delete
+    </div>
+    <div>
+        Create Table
+
+        CREATE TABLE table_name (
+        column _ namel datatype constraint,
+        column _ name2 datatype constraint,
+        );
+
+        Insert into Table
+        INSERT INTO table_name
+        (colname 1, colname2)
+        VALUES
+        (coll_ VI, c012_ VI),
+        (coil _ v2, c012_ v2);
+
+        Select Command
+        Selects & Show data from the DB
+
+        Syntax
+        SELECT col1, col2 FROM table _ name;
+
+        Syntax (to show all)
+        SELECT * FROM table_name;
+
+        DISTINCT -- keyword to select and display only unique values
+
+        Update (to update existing rows)
+        UPDATE table_name
+        SET col1 = val1, col2 = val2
+        WHERE condition;
+
+        Delete (to delete existing rows)
+        DELETE FROM table_ name
+        WHERE condition;
+
+        Alter (to change the schema)
+        
+        ADD Column
+            ALTER TABLE table _ name
+            ADD COLUMN column _ name datatype constraint;
+    
+        DROP Column
+            ALTER TABLE table _ name
+            DROP COLUMN column _ name;
+        
+        RENAME Table
+            ALTER TABLE table _ name
+            RENAME TO new _ table _ name;
+
+        CHANGE Column (rename)
+            ALTER TABLE table _ name
+            CHANGE COLUMN old_ name new_name new_ datatype new_constraint;
+        
+        MODIFY Column (modify datatype/ constraint)
+            ALTER TABLE table _ name
+            MODIFY col_name new_datatype new_ constraint;
+
+        Truncate (to delete table's data)
+            TRUNCATE TABLE table_ name ,
+
+        DROP (to delete whole table)
+            DROP TABLE table_name;
+    </div>
+    <div>
+        <img src="\ScreenShot_28-02-2024_01_23_40_PM.png">
+    </div>
+    <div>
+        Constraints
+        Rules for data in the table
+
+        NOT NULL -- columns cannot have a null value
+        UNIQUE -- all values in column are different
+        DEFAULT -- sets the default value of a column
+        CHECK -- it can limit the values allowed in a column
+
+        salary INT DEFAULT 25000
+
+        CONSTRAINT age_check CHECK (age >= 18 AND city="Delhi")
+
+        PRIMARY KEY
+        makes a column unique & not null but used only for one
+        CREATE TABLE temp (
+        id int not null,
+        PRIMARY KEY (id)
+        );
+
+        FOREIGN KEY
+        prevent actions that would destroy links between tables
+        CREATE TABLE temp (
+        cust id int,
+        FOREIGN KEY (cust_id) references customer(id)
+        );
+    </div>
+    <div>
+        What are Keys?
+        Keys are special columns in the table
+
+        Primary Key
+        It is a column (or set of columns) in a table that uniquely identifies each row. (a unique id)
+        There is only 1 PK & it should be NOT null.
+
+        Foreign Key
+        A foreign key is a column (or set of columns) in a table that refers to the primary key in another table
+        FKs can have duplicate & null values.
+        There can be multiple FKs.
+    </div>
+
+    <div>
+        Frequently used Operators
+        AND (to check for both conditions to be true)
+        OR (to check for one of the conditions to be true)
+        BETWEEN (selects for a given range)
+        IN (matches any value in the list)
+        NOT (to negate the given condition)
+
+        Operators
+
+        Arithmetic Operators : +(addition) , -(subtraction), * (multiplication), /(division), %(modulus)
+        Comparison Operators : = (equal to), != (not equal to), > , >=, < , <=-------------------------------------
+        Logical Operators : AND, OR , NOT, IN, BETWEEN, ALL, LIKE, ANY ---------------------------------------------
+        Bitwise Operators : & (Bitwise AND), | (Bitwise OR) --------------------------------------------------------
+    </div>
+    <div>
+        Where Clause
+        To define some conditions
+        SELECT col1, co12 FROM table_name
+        WHERE conditions;
+    </div>
+    <div>
+        Limit Clause
+        Sets an upper limit on number of (tuples) rows to be returned
+
+        SELECT coll, col2 FROM table_name
+        LIMIT number;
+    </div>
+    <div>
+        Order by Clause
+        To sort in ascending (ASC) or descending order (DESC)
+
+        SELECT col1, col2 FROM table_name
+        ORDER BY col_ name(s) ASC;
+    </div>
+    <div>
+        Aggregate Functions
+        Aggregate functions perform a calculation on a set of values, and return a single value.
+
+        • COUNT()
+        • MAX()
+        • MIN()
+        • SUM()
+        • AVG()
+    </div>
+    <div>
+        Group by Clause
+        Groups rows that have the same values into summary rows.
+        It collects data from multiple records and groups the result by one or more column.
+
+        SELECT col1, col2
+        FROM table _ name
+        GROUP BY col_ name(s);
+        *Generally we use group by with some aggregation function.
+    </div>
+    <div>
+        Having Clause
+        Similar to Where i.e. applies some condition on rows.
+        But it is used when we want to apply any condition after grouping.
+
+        SELECT col1, col2
+        FROM table_name
+        GROUP BY col_name(s)
+        HAVING condition;
+
+        • WHERE is for the table, HAVING is for a group
+        • Grouping is necessary for HAVING
+    </div>
+    <div>
+        General Order for clauses from top to bottom
+
+        SELECT column(s)
+        FROM table _ name
+        WHERE condition
+        GROUP BY column(s)
+        HAVING condition
+        ORDER BY column(s) ASC;
+    </div>
+</body>
+
+</html>

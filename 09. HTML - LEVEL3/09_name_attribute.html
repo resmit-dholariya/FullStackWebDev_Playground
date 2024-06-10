@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Attribute</title>
+  </head>
+  <body>
+    <!-- name tag is used to refer the data submiited to server by displayed in URL -->
+    <form action="/action">
+      <div>
+        <label>
+          Enter Username :
+          <input type="text" placeholder="Username" id="username" name="user" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Enter Password :
+          <input
+            type="Password"
+            placeholder="Password"
+            id="Password"
+            name="pass"
+          />
+        </label>
+      </div>
+      <div>
+        <label for="age">Age : </label>
+        <input type="number" placeholder="Enter your Age" id="age" name="age" />
+      </div>
+      <div>
+        <label for="mobile_num">Mobile Number :</label>
+        <input
+          type="number"
+          placeholder="Enter your mobile number"
+          id="mobile_num"
+          name="mobile"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results?">
+        <input type="text" placeholder="search on youtube" name="search_query">
+        <button>search</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Intro</title>
+</head>
+
+<body>
+    <div>
+        The Shell
+
+        mongosh -- to start
+        use college -- to create & use a new database called "college"
+    </div>
+    <div>
+        BSON Data
+        Binary JSON
+    </div>
+    <div>
+        Collections
+        Document : Mongo stores data in form of documents (BSON docs)
+        Collection : MongoDB stores documents in collections.
+    </div>
+    <div>
+        INSERT in DB
+        insert0ne
+
+        show collections
+        db.student.insert0ne( { name: "adam", marks: 79 } )
+        db.student.find( )
+
+        If a collection does not exist, MongoDB creates the
+        collection when you first store data for that collection.
+    </div>
+    <div>
+        INSERT in DB
+
+        insertMany (array of documents)
+        db.student.insertMany( [ { name: "bob", marks: 65 }, { name: "eve", city: "Delhi" ) )
+    </div>
+    <div>
+        FIND in DB
+        db.collection.find( ) -- returns everything
+
+        for specific queries
+        db.collection.find({ key: value}) -- returns cursor to refenence to original document by giving output in array
+        db.coIlection.findOne({ key: value}) -- returns actual document
+
+        to specify multiple conditions
+        db.collection.find({ key: value}, { key: value}) -- returns cursor to refenence to original document by giving
+        output in array
+        db.coIlection.findOne({ key: value}, { key: value}) -- returns actual document
+    </div>
+    <div>
+        Query Operators
+        <a href="https://www.mongodb.com/docs/manual/reference/operator/query/">Link to read</a>
+
+        FIND in DB
+        Query Operators
+        Q. Find students where marks > 75
+        Ans -- db.student.find({ marks: { $gt: 75 } })
+
+        Q. Find students who live in Delhi or Mumbai
+        Ans -- db.student.find({ city: { $in: ["Mumbai", "Delhi"] } })
+
+        Q. Find students who scored > 75 or live in Delhi
+        Ans -- db.student.find({ $or: [{ marks: { $gt: 75 } }, { city: "Delhi" }] })
+
+    </div>
+    <div>
+        UPDATE in DB
+        Update Operators
+
+        $addFietds
+        $set
+        $project
+        $unset
+        $replaceRoot
+        $replaceWith
+    </div>
+    <div>
+        updateOne
+        db. collection. updateOne()
+        Updates at most a single document that match a specified filter even though
+        multiple documents may match the specified filter.
+        db.student.updateOne({name: "adam"}, {$set: {marks:99}})
+        db.student.updateOne({name:"adam"}, {$set: {state: "Gujarat"}}) -- field is not present then it will create it
+
+        db. updateMany ( )
+        Update all documents that match a specified filter.
+        db.student.updateMany({city:"Delhi"}, {$set: {city: "New Delhi"}})
+
+        db. collection. replaceOne ( )
+        Replaces at most a single document that match a specified filter even though
+        multiple documents may match the specified filter.
+        db.student.replaceOne({name:"bob"}, {name:"shradhha", marks:90, sta
+        state: "Haryana"})
+    </div>
+    <div>
+        Nesting
+
+        -- insert
+        db.student.insertOne({name: "farhan", performance:{marks:96, grade:"A"}})
+
+        -- to Find
+        db.student.find({"performance.marks": 96})
+    </div>
+    <div>
+        DELETE in DB
+
+        deleteOne
+        db.collection.delete0ne( <filter> , <options> )
+            db.student.deleteOne({state: "Haryana"})
+
+        deleteMany
+        db.collection.deleteMany(<filter> , <options>)
+            db.student.deleteMany({marks: {$lt: 75}})
+            college> db.student.deleteMany({}) -- deletes all documents
+
+        db.dropDatabase( ) -- drops database currently working
+    </div>
+</body>
+
+</html>

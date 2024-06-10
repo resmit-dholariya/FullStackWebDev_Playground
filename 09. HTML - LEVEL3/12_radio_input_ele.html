@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Element</title>
+  </head>
+  <body>
+    <form action="/server">
+      <div>
+        <!-- to select only one radio button you have to put same name for all i.e. fruit here is used -->
+        <!-- if you want to display which radio option is selected then you have to add value attribute -->
+        <input type="radio" name="fruit" id="apple" value="Apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="Mango" value="Mango" />
+        <label for="Mango">Mango</label>
+        <input type="radio" name="fr uit" id="Banana" value="Banana" />
+        <label for="Banana">Banana</label>
+      </div>
+      <div>
+        Choose your subjects :
+        <input type="checkbox" name="subjects" id="science" value="science">
+        <label for="science">science</label>
+        <input type="checkbox" name="subjects" id="math" value="math">
+        <label for="math">math</label>
+        <input type="checkbox" name="subjects" id="english" value="english">
+        <label for="english">english</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

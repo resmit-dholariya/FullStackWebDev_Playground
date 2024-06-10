@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labels in HTML</title>
+  </head>
+  <body>
+    <button type="submit">submit</button>  <!-- cannot submit anything as it is outside the form-->
+    <form action="/action">
+      <div>
+        <label>
+          Enter Username : <input type="text" placeholder="Username" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Enter Password : <input type="Password" placeholder="Password" />
+        </label>
+      </div>
+      <div>
+        <label for="age">Age : </label>
+        <input type="number" placeholder="Enter your Age" id="age" />
+      </div>
+      <div>
+        <label for="mobile_num">Mobile Number :</label>
+        <input
+          type="number"
+          placeholder="Enter your mobile number"
+          id="mobile_num"
+        />
+      </div>
+      <button type="reset">Reset</button>
+      <button type="button">Do nothing</button>
+      <button type="submit">Submit</button>
+      <br>
+      <!-- buttons with the help of input element -->
+      <input type="button" value="click me by input method">
+      <input type="submit" value="submit button by input">
+    </form>
+  </body>
+</html>

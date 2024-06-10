@@ -1,0 +1,18 @@
+{
+  "name": "46.-mongodb-(part---3)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.2.1"
+  }
+}

@@ -1,0 +1,29 @@
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one{
+    background-color: aquamarine;
+    position: relative;
+    z-index: 1;
+}
+
+.two{
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    z-index: -2;
+}
+
+/* 
+    z-index
+    It decides the stack level of elements
+    Overlapping elements with a larger z-index cover those with a smaller one.
+    to change - z index of an element the element should not be in static or default position and it should be in relative, absolute.
+*/

@@ -1,0 +1,16 @@
+.container{
+    background-color: pink;
+}
+
+.btn-outline-light{
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-light:hover{
+    border-color: black;
+}
+
+.btn-link.btn-lg{
+    border-color: blue;
+}

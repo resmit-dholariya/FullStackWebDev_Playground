@@ -1,0 +1,65 @@
+h1 {
+  text-align: center;
+}
+
+.box {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  justify-content: center;
+
+  animation-name: FontAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+
+  /* aniamtion shorthand */
+  /* animation: ColorAnimate 1s ease-in-out 0s 3 alternate; */
+
+  animation: Width-Col-radius-Animate 3s ease-in-out 0s 3 normal;
+}
+
+@keyframes FontAnimation {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
+
+@keyframes ColorAnimate {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes Width-Col-radius-Animate {
+    0%{
+        width: 100px;
+        background-color: green;
+        border: none;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellowgreen;
+    }
+    75%{
+        background-color: orange;
+    }
+    100%{
+        width: 400px;
+        background-color: blue;
+        border-radius: 25px;
+        border: 2px solid black;
+    }
+}

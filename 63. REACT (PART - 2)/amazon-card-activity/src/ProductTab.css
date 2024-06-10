@@ -1,0 +1,4 @@
+.ProductTab {
+  display: flex;
+  flex-wrap: wrap;
+}

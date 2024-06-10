@@ -1,0 +1,16 @@
+
+/* Question 3 */
+div.greetDiv .greet{ /*specificity = 021*/
+  color: green;
+}
+
+.greetDiv p.greet{  /*specificity = 021*/
+  color: blue;
+}
+
+.greetDiv .greet{   /*specificity = 020*/
+  color: red; 
+}
+
+/* here two specificity clashes so cascading rule implements 
+which states the style which is lastly applied on element will be final. */

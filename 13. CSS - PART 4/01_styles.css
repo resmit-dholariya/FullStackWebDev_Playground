@@ -1,0 +1,13 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 100, 200, 0.7);
+    /* alpha -- applies to color how much visible and how much not ranges from 0 to 1 and in ff codes from 00 to ff */
+}
+
+#opacity{
+    background-color: #ffa511;
+    opacity: 0.6;
+    /* opacity applies to whole element and sub-element that how much it would be visible and how much not */
+}
+

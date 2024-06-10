@@ -1,0 +1,9 @@
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    margin: auto;
+    box-shadow: 2px 2px 8px black;
+    /* box-shadow: x-offset y-offset blurr-radius shadow-color */
+}

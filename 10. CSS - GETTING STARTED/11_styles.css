@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    text-decoration: wavy red underline;
+    font-size: 50px;
+  }
+  
+  h2 {
+    text-align: start; /* start and end are same as left and right*/
+    font-weight: 800;
+    text-decoration: double blue overline;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    text-align: justify;
+    text-decoration: pink line-through;
+  }
+  
+  p {
+    text-align: end;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  a{
+      text-decoration: none;
+  }

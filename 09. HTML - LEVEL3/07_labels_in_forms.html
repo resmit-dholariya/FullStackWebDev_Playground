@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labels in HTML</title>
+  </head>
+  <body>
+    <form action="/action">
+      <div>
+        <!-- by using labels in form the text written before input box and input box are linked together 
+            the input cursor will blink both the time when we click on box as well as the text asking for perticular input -->
+        <label>
+          Enter Username : <input type="text" placeholder="Username" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Enter Password : <input type="Password" placeholder="Password" />
+        </label>
+      </div>
+    </form>
+    <!-- another way of using label tag by using id -->
+    <form>
+      <div>
+        <label for="age">Age : </label>
+        <input type="number" placeholder="Enter your Age" id="age" />
+      </div>
+      <div>
+        <label for="mobile_num">Mobile Number :</label>
+        <input
+          type="number"
+          placeholder="Enter your mobile number"
+          id="mobile_num"
+        />
+      </div>
+    </form>
+  </body>
+</html>

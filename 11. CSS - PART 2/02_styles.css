@@ -1,0 +1,50 @@
+/* Question 1 */
+h1 {
+  color: pink;
+}
+
+#greet {
+  color: yellow;
+}
+
+.myclass {
+  color: brown;
+}
+
+/* Question 2 */
+div p {
+  /*Descendent Selector -- specificity = 002*/
+  background-color: black;
+}
+
+.para {
+  /*Class selector  -- specificity = 010*/
+  background-color: blue;
+}
+
+p {
+  /*element selector  -- specificity = 001*/
+  background-color: green;
+}
+
+/* for this kind of problems we calculate specificity of 
+selectors which is 3 digit number 1st digit is sum of all 
+id selector in a perticular css followed by sum of class 
+attribute, pseudo class and lastly sum of element & pseudo elements selectors*/
+
+
+/* Question 3 */
+div.greetDiv .greet{ /*specificity = 021*/
+  color: green;
+}
+
+.greetDiv p.greet{  /*specificity = 021*/
+  color: blue;
+}
+
+.greetDiv .greet{   /*specificity = 020*/
+  color: red; 
+}
+
+/* here two specificity clashes so cascading rule implements 
+which states the style which is lastly applied on element will be final. */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & Github Intro</title>
+</head>
+<body>
+    <div>
+        What is Git?
+            Free & Open Source Version Control System
+            tools that help to tracks changes in code
+    </div>
+    <div>
+        What is Github?
+            Website where we host repositories online
+    </div>
+    <div>
+        Using Git
+            • Command Line (Most Popular)
+            • IDE I Code Editors (like VSC0de)
+            • Graphical User Interface (like GitKraken)
+    </div>
+    <div>
+        Configuring Git
+            git config --global user.name "My Name"
+            git config --global user.email "someone@email.com"
+    </div>
+    <div>
+        Basic Commands
+            • Clone - Cloning a repository on our local machine git clone <- some link ->
+            • status - displays the state of the code -- git status
+    </div>
+    <div>
+        Basic Commands
+            • add - adds new or changed files in your working directory to the Git staging area.
+                git add <- file name ->
+            • commit - it is the record of change
+                git commit -m "some message"
+            • push - upload local repo content to remote repo
+                git push origin main
+    </div>
+    <div>
+        Basic Commands
+            • init- used to create a new git repo -- git init
+
+            git remote add origin <-link->
+            git remote -v (to verify remote)
+            git branch (to check branch)
+            git branch -M main (to rename branch)
+            git push origin main
+    </div>
+    <div>
+        Branch Commands
+            git branch (to check branch)
+            git branch -M main (to rename branch)
+            git checkout <- branch name -> (to navigate)
+            git checkout -b <- new branch name -> (to create new branch)
+            git branch -d <- branch name -> (to delete branch)
+    </div>
+    <div>
+        Merging Code
+            git diff <- branch name->   (to compare commits, branches, files & more)
+            git merge <- branch name->   (to merge 2 branches)
+            OR
+            Create a PR
+
+        Pull Request
+            It lets you tell others about changes you've pushed to a branch in a repository on GitHub.
+        
+        git pull origin main
+            used to fetch and download content from a remote repo and immediately update the local repo
+            to match that content.
+    </div>
+    <div>
+        Merge Conflicts
+            An event that takes place when Git is unable to automatically resolve differences in code
+            between two commits.
+    </div>
+    <div>
+        Fixing Mistakes
+            Case 1 : staged changes
+                git reset <- file name ->
+                git reset
+            Case 2 : commited changes (for one commit)
+                git reset HEAD-1
+            Case 3 : commited changes (for many commits)
+                git reset <- commit hash ->
+                git reset --hard <- commit hash ->
+    </div>
+    <div>
+        What is Forking?
+            A fork is a new repository that shares code and visibility settings with the original "upstream"
+            repository.
+            Fork is a rough copy.
+    </div>
+</body>
+</html>
